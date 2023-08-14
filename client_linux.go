@@ -123,7 +123,6 @@ func (c *client) BSS(ifi *Interface) (*BSS, error) {
 	return parseBSS(msgs)
 }
 
-<<<<<<< HEAD
 func (c *client) ScanAPs(ifi *Interface) ([]*BSS, error) {
 	family, err := c.c.GetFamily(nl80211.GenlName)
 	if err != nil {
